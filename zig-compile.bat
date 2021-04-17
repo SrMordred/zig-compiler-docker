@@ -1,0 +1,1 @@
+docker exec -it zig-compiler zig run main.zig

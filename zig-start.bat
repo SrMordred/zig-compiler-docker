@@ -1,0 +1,1 @@
+docker run -v %CD%:/app -it -d --rm --name zig-compiler srmordred/zig-compiler:0.7.1 sh
