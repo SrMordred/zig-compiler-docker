@@ -1,9 +1,9 @@
 FROM alpine
 
-ARG ZIG_VERSION
+ARG ZIG_PATH
 ARG ZIG_FILE
 
-RUN wget https://ziglang.org/download/$ZIG_VERSION/$ZIG_FILE \
+RUN wget $ZIG_PATH \
     && mkdir /zig \
     && mkdir /app \
     && tar -xf $ZIG_FILE -C /zig --strip-components 1 \
